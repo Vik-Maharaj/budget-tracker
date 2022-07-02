@@ -45,8 +45,6 @@
     ],
     "theme_color": "#ffffff",
     "background_color": "#000000",
-    "description": "An app for tracking your budget that functions on and offline",
-    
-    
-    
+    "start_url": "/",
+    "display": "standalone"   
 }
