@@ -36,3 +36,33 @@ self.addEventListener("install", function (e) {
         })
       );
     });
+
+    self.addEventListener('fetch', function (event) {
+        if (event.request.url.includes("/api/")) {
+            console.log("[Service Worker] Fetch (data)", event.request.url);
+      
+            event.respondWith(
+                caches.open(STATIC_CACHE).then(cache => {
+                    return fetch(event.request)
+                        .then(response => {
+                            if (response.status === 200) {
+                                cache.put(event.request.url, response.clone());
+                            }
+                            return response;
+                        })
+                        .catch(err => {
+                            return cache.match(event.request);
+                        });
+                })
+            );
+            return;
+        }
+
+        event.respondWith(
+            caches.open(RUNTIME_CACHE).then(cache => {
+                return cache.match(event.request).then(response => {
+                    return response || fetch(event.request);
+                });
+            })
+        );
+      });
