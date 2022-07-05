@@ -11,9 +11,9 @@ The app runs entirely in the browser, and was created utilizing JavaScript, Node
 - If the user is offline, once their internet connection is restablished, then the deposits or expenses added while they were offline are added to their transaction history and their totals are updated
 
 
-![Vik's Budget Tracker Web App](public/stylesheets/assets/screenshot.png)
+![Vik's Budget Tracker Web App](public/assets/screenshot.png)
 
-The deployed site can be found at https://aime-news.herokuapp.com.
+The deployed site can be found at https://vik-budget-tracker.herokuapp.com.
 
 
 ## Installation
@@ -22,21 +22,7 @@ To install this application, first clone the repo to your local machine. Then, y
 
 ## Usage
 
-To use this application, you first need to have MySQL installed, and then initialize the database with the following command:
-
-```
-mysql -u root -p
-``` 
-Next, enter your password for MySQL and source the database: 
-```
-SOURCE db/schema.sql
-quit
-``` 
-Then run the following to seed the database:
-```
-npm run seed
-```
-Finally, initialize the server: 
+Once the dependencies are installed, to use this application, initialize the server with the following command: 
 ```
 npm run start
 ```
