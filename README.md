@@ -1,22 +1,17 @@
-# AiME News - Tech Blog
+# Vik's Budget Tracker
 
 ## Description
 
-Welcome to AiME - a CMS-style blog site focused on the latest news and advancements in AI generated artistry and content creation.
+Keeping track of personal fiances is important - it is extra important for a person who travels often. Their need to track withdrawals and deposits are critically important while on the go, hence the reason for this the creation of this full-stack web app.
 
-The site was created utilizing JavaScript, Node.js, Express.js, MySQL, Sequelize, and Handlebars to create a full-stack application that allows users to sign-up and post to the blog, and it includes the following features:
+The app runs entirely in the browser, and was created utilizing JavaScript, Node.js, Express.js, and MongoDB. It includes the following features:
 
-- When the user first visits the site, they are presented with the homepage that shows any existing blog posts, and navigation links to either log in or sign up
-- When the user signs up, they are prompted to create a username and password
-- Once a user is signed up, their credentials are saved—they can revisit the site at a later time and choose to log in
-- Once a user is signed in, they can see navigation links for the homepage, the dashboard, and the option to log out
-- When the user clicks on the homepage option in the navigation, they are taken to the homepage and presented with existing blog posts that include the post title and the date created
-- When the user enters a comment and clicks on the submit button while signed in, the comment is saved and the post is updated to display the comment, the comment creator’s username, and the date created
-- Once the user clicks on the button to add a new blog post, they are prompted to enter both the title and contents for their blog post, and when they create their new blog post, the title and contents of the post are saved—the dashboard is subsequently updated
-- When the user clicks on the logout option in the navigation, they are signed out of the site
+- The user is able to use the site with or without an internet connection
+- Once the user enters an expense or deposit, they will recieve a notification that they have done so
+- If the user is offline, once their internet connection is restablished, then the deposits or expenses added while they were offline are added to their transaction history and their totals are updated
 
 
-![AiME Tech Blog screenshot](public/stylesheets/assets/screenshot.png)
+![Vik's Budget Tracker Web App](public/stylesheets/assets/screenshot.png)
 
 The deployed site can be found at https://aime-news.herokuapp.com.
 
