@@ -10,6 +10,7 @@ The app runs entirely in the browser, can be accessed from anywhere, and was cre
 - Once the user enters an expense or deposit, they will receive a notification that they have done so
 - If the user is offline, once their internet connection is reestablished, then the transactions added while they were offline are added to their history and their totals are updated
 
+Here is a screenshot example of the app in use:
 
 ![Vik's Budget Tracker Web App](public/assets/screenshot.png)
 
